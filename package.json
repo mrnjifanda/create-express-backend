@@ -1,5 +1,5 @@
 {
-    "name": "create-express-backend",
+    "name": "@mrnjifanda/create-express-backend",
     "version": "1.0.0",
     "description": "A tool to initialize projects @mrnjifanda/jifi-base",
     "bin": {
@@ -10,7 +10,7 @@
         "project",
         "generator"
     ],
-    "author": "",
+    "author": "Mr NJIFANDA",
     "license": "ISC",
     "dependencies": {
         "ncp": "^2.0.0"
