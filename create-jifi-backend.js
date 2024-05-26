@@ -20,7 +20,7 @@ function createProject(projectName) {
         if (err) return console.error(err);
         try {
 
-            fs.rmSync(folderPath, { recursive: true });
+            fs.rmSync(folderPath, { recursive: true, force: true });
             console.log(
                 `Project ${projectName} created successfully.\n` +
                 `Please run the following command to install the dependencies:\n` +
