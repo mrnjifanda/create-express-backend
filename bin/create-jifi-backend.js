@@ -18,21 +18,20 @@ function createProject(projectName) {
     ncp(templatePath, projectPath, (err) =>{
 
         if (err) return console.error(err);
-        try {
 
-            fs.rmdirSync(folderPath, { recursive: true, force: true });
-            console.log(
-                `Project ${projectName} created successfully.\n` +
-                `Please run the following command to install the dependencies:\n` +
-                `cd ${projectName}\n` +
-                `npm install\n` +
-                `cp .env.example .env\n` +
-                `npm start\n`
-            );
-        } catch (err) {
+        fs.rm(folderPath, { recursive: true, force: true }, (err) => {
+            // if (err) return console.error(err);
+            // console.log(`Folder ${folderPath} deleted successfully.`);
+        });
 
-            console.error(`Error deleting folder: ${err}`);
-        }
+        console.log(
+            `Project ${projectName} created successfully.\n` +
+            `Please run the following command to install the dependencies:\n` +
+            `cd ${projectName}\n` +
+            `npm install\n` +
+            `cp .env.example .env\n` +
+            `npm start\n`
+        );
     });
 }
 

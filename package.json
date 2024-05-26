@@ -1,6 +1,6 @@
 {
     "name": "create-jifi-backend",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "description": "A tool to initialize projects @mrnjifanda/jifi-base",
     "bin": {
         "create-express-backend": "./bin/create-jifi-backend.js"
