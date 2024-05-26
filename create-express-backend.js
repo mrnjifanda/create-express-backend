@@ -8,7 +8,7 @@ const ncp = require('ncp').ncp;
 function createProject(projectName) {
 
     const projectPath = path.resolve(projectName);
-    console.log(`Création du projet dans ${projectPath}`);
+    console.log(`Creating the project in ${projectPath}`);
 
     execSync(`npm init -y`, { cwd: projectPath, stdio: 'inherit' });
     execSync(`npm install @mrnjifanda/jifi-base`, { cwd: projectPath, stdio: 'inherit' });
