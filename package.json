@@ -1,12 +1,17 @@
 {
     "name": "create-jifi-backend",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A tool to initialize projects @mrnjifanda/jifi-base",
     "bin": {
         "create-express-backend": "./bin/create-jifi-backend.js"
     },
-    "scripts": {},
+    "scripts": {
+        "start": "node ./bin/create-jifi-backend.js your-project-name",
+        "remove": "sudo rm -rf your-project-name"
+    },
     "keywords": [
+        "express",
+        "backend",
         "project",
         "generator"
     ],
@@ -21,6 +26,7 @@
     },
     "homepage": "https://github.com/mrnjifanda/create-express-backend#readme",
     "dependencies": {
+        "chalk": "^4.1.2",
         "ncp": "^2.0.0"
     }
 }
